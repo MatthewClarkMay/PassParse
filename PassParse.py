@@ -2,7 +2,6 @@
 
 import argparse,sys
 
-
 def main():
 
     parser = argparse.ArgumentParser(description="Manipulate wordlists for password based attacks and proactive defense.")
