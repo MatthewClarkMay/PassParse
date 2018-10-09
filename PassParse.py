@@ -72,15 +72,15 @@ def main():
 
         with open(str(args["file"]), "r", encoding=enc) as f:
             for line in f:
+                if len(line) < length:
+                    continue
+                    
                 types = {
                          "lower": False,
                          "capital": False,
                          "number": False,
                          "special": False
                          }
-
-                if len(line) < length:
-                    continue
 
                 for letter in line:
                     if letter in lower and not types["lower"]:
